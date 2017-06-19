@@ -31,4 +31,7 @@ public class PushBullet {
 		}
 		return null;
 	}
+	public Push sendLinkToDevice(Device d, String title, String message, String link) throws PushBulletException{
+		return Push.sendLinkToDevice(this.server, d, title, message, link);
+	}
 }
